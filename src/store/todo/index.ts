@@ -80,4 +80,4 @@ const todoStore: TodoStore = {
 export default todoStore
 
 // Provide/Injectするのに必要なキーを宣言
-export const key: InjectionKey<TodoStore> = Symbol('todo')
+export const todoKey: InjectionKey<TodoStore> = Symbol('todo')
