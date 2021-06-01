@@ -12,7 +12,7 @@ const routes: Array<RouteRecordRaw> = [
     path: '/new',
     name: 'AddTodo',
     component: AddTodo
-  }
+  },
 ]
 
 const router = createRouter({
