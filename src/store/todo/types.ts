@@ -19,7 +19,8 @@ export type Params = Pick<Todo, 'title' | 'description' | 'status'>
 
 export interface TodoStore {
   state: DeepReadonly<TodoState>
-  getTodo: (id: number) => void
+  getTodo: (id: number) => Todo
+  //TODO: 以下のvoidも適切な型に指定する？
   addTodo: (todo: Params) => void
   updateTodo: (id: number, todo: Todo) => void
   deleteTodo: (id: number) => void
