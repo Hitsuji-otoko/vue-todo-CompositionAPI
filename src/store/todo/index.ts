@@ -1,6 +1,6 @@
 import { InjectionKey, reactive, readonly } from 'vue'
 import { Params, Todo, TodoState, TodoStore } from '@/store/todo/types'
-import Repository, { TODOS } from '@/clients/TodoClient/RepositoryFactory'
+import Repository, { TODOS } from '@/clients/RepositoryFactory'
 
 const TodoRepository = Repository[TODOS]
 
