@@ -54,6 +54,7 @@ export default defineComponent({
       const onSubmit = () => {
         const { title, description, status } = data;
         todoStore.updateTodo(id, {
+          //変数展開してる。idやcreatedAtといったtodoのプロパティが展開されてる
           ...todo,
           title,
           description,
