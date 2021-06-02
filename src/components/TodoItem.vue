@@ -15,6 +15,8 @@
 <script lang="ts">
 import { Todo } from "@/store/todo/types";
 import { computed, defineComponent, PropType } from "vue";
+import { useFormatDate } from "@/composables/use-formate-date";
+
 export default defineComponent({
   props: {
     todo: {
@@ -34,12 +36,7 @@ export default defineComponent({
       emit("clickTitle", props.todo.id);
     };
 
-    const formatDate = computed(() => {
-      //TODO:考える
-      return `${props.todo.createdAt.getFullYear()} / ${
-        props.todo.createdAt.getMonth() + 1
-      } / ${props.todo.createdAt.getDate()}`;
-    });
+    const formatDate = useFormatDate(props.todo.createdAt);
 
     return {
       clickDelete,
