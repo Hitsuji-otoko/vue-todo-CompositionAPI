@@ -6,30 +6,7 @@ const TodoRepository = Repository[TODOS]
 
 const state = reactive<TodoState>({
   todos: [
-    {
-      id: 1,
-      title: 'todo1',
-      description: '1つ目',
-      status: 'waiting',
-      createdAt: new Date('2020-12-01'),
-      updatedAt: new Date('2020-12-01'),
-    },
-    {
-      id: 2,
-      title: 'todo2',
-      description: '2つ目',
-      status: 'waiting',
-      createdAt: new Date('2020-12-02'),
-      updatedAt: new Date('2020-12-02'),
-    },
-    {
-      id: 3,
-      title: 'todo3',
-      description: '3つ目',
-      status: 'working',
-      createdAt: new Date('2020-12-03'),
-      updatedAt: new Date('2020-12-04'),
-    },
+
   ],
 })
 const fetchTodos = async () => {
