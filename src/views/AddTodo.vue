@@ -46,7 +46,7 @@ export default defineComponent({
     const onSubmit = () => {
       // TODO:考える
       const { title, description, status } = data;
-      todoStore.addTodo({
+      const tmpUndefined = todoStore.addTodo({
         title,
         description,
         status,
