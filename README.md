@@ -1,4 +1,6 @@
-# todo-sample2
+# todo-Composition-ProviderPattern
+Vue3 CompositionAPI + Providerパターン + TypeScriptで作成したTodoリスト
+練習用リポジトリ
 
 ## Project setup
 ```
